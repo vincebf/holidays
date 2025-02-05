@@ -4,8 +4,6 @@ import keyboard
 import sys, datetime
 from datetime import datetime
 
-now = datetime.now()
-formatted_now = now.strftime("%Y-%m-%d %H:%M:%S")
 # 设置安全措施：将鼠标移动到屏幕左上角(0,0)时触发失败安全，终止程序
 pyautogui.FAILSAFE = True
 
@@ -15,6 +13,8 @@ def auto_click(interval_seconds, x=None, y=None, click_times=1):
     try:
         print("程序已启动，按 ESC 键终止...")
         while True:
+            now = datetime.now()
+            formatted_now = now.strftime("%Y-%m-%d %H:%M:%S")
             # 检测是否按下 ESC 键
             if keyboard.is_pressed("esc"):
                 print("\n程序已手动终止")
