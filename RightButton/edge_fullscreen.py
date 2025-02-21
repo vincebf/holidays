@@ -82,5 +82,5 @@ def activate_and_fullscreen_edge():
             # 发送 F11 按键
             pyautogui.press("f11")
             # print("已发送 F11 按键至 Edge 窗口")
-        time.sleep(1200)
+        time.sleep(2600)
         pyautogui.press("f5")
