@@ -43,7 +43,7 @@ def auto_click(interval_seconds, x=None, y=None, click_times=1):
 
 if __name__ == "__main__":
     # 自定义参数（示例：每5秒点击一次坐标(100, 200)）
-    CLICK_INTERVAL = 25  # 点击间隔（秒）
+    CLICK_INTERVAL = 30  # 点击间隔（秒）
     TARGET_X = None  # 目标X坐标（None表示当前鼠标位置）
     TARGET_Y = None  # 目标Y坐标（None表示当前鼠标位置）
     CLICK_TIMES = 1  # 每次点击次数

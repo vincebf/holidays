@@ -9,7 +9,7 @@ chrome_driver_path = "D:\deepseek\chromedriver.exe"
 service = Service(chrome_driver_path)
 driver = webdriver.Chrome(service=service)
 
-url = "http://172.24.215.211:3000/d/ady80rsrqrz0gf/zabbix-servers-status?orgId=1&refresh=1m&kiosk"
+url = "http://172.24.215.211:3000/d/ady80rsrqrz0gf/zabbix-servers-status?orgId=5&refresh=5m&kiosk"
 driver.get(url)
 time.sleep(5)
 
