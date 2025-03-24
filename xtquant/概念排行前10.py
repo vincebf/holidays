@@ -1,5 +1,5 @@
 import akshare as ak
-
+import pandas as pd
 
 def analyze_sector_performance(n=10):
     """
@@ -44,6 +44,12 @@ def get_em_head_concept_stock():
             symbol=sector
         )  # 获取板块关联的股票列表
         stock_list.extend(concept_stocks)  # 添加到股票列表中
-    all_stocks = sh_all(stock_list)  # 转换所有股票代码为标准格式
-    filtered_stocks = filter_df(pd.DataFrame(all_stocks))  # 过滤掉不需要的股票
-    return filtered_stocks  # 返回过滤后的股票列表
+    performance = stock_list
+
+    # print(performance)
+    # all_stocks = sh_all(stock_list)  # 转换所有股票代码为标准格式
+    # filtered_stocks = filter_df(pd.DataFrame(all_stocks))  # 过滤掉不需要的股票
+    # return filtered_stocks  # 返回过滤后的股票列表
+
+if __name__ == "__main__":
+    get_em_head_concept_stock()
