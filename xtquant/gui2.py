@@ -46,8 +46,7 @@ tdx目录 = Label(
     height=2,
     # relief=SUNKEN,
 ).place(relx=0.01, rely=0.2, relwidth=0.05, relheight=0.031)
-tdxml = Entry(window)
-tdxml.place(relx=0.063, rely=0.2, relwidth=0.46, relheight=0.031)
+tdxml = Entry(window).place(relx=0.063, rely=0.2, relwidth=0.46, relheight=0.031)
 
 QMT目录 = Label(
     window,
@@ -58,56 +57,40 @@ QMT目录 = Label(
     height=2,
     # relief=SUNKEN,
 ).place(relx=0.495, rely=0.2, relwidth=0.07, relheight=0.031)
-qmtml = Entry(window)
-qmtml.place(relx=0.56, rely=0.2, relwidth=0.43, relheight=0.031)
+qmtml = Entry(window).place(relx=0.56, rely=0.2, relwidth=0.43, relheight=0.031)
 
-lb4 = Label(
+买入 = Label(
     window,
-    text="tdx目录",
+    text="买入",
     # bg="#d3fbfb",
     font=("宋体", 12),
     width=12,
     height=2,
     # relief=SUNKEN,
-).place(relx=0.01, rely=0.24, relwidth=0.05, relheight=0.031)
-inp4 = Entry(window)
-inp4.place(relx=0.063, rely=0.24, relwidth=0.46, relheight=0.031)
+).place(relx=0.01, rely=0.24, relwidth=0.07, relheight=0.031)
+mairu = Entry(window).place(relx=0.063, rely=0.24, relwidth=0.223, relheight=0.031)
 
-lb5 = Label(
+卖出 = Label(
     window,
-    text="QMT目录",
+    text="卖出",
     # bg="#d3fbfb",
     font=("宋体", 12),
     width=12,
     height=2,
     # relief=SUNKEN,
-).place(relx=0.495, rely=0.24, relwidth=0.07, relheight=0.031)
-inp5 = Entry(window)
-inp5.place(relx=0.56, rely=0.24, relwidth=0.43, relheight=0.031)
+).place(relx=0.3, rely=0.24, relwidth=0.07, relheight=0.031)
+maichu = Entry(window).place(relx=0.355, rely=0.24, relwidth=0.23, relheight=0.031)
 
-lb6 = Label(
+持仓 = Label(
     window,
-    text="tdx目录",
+    text="持仓",
     # bg="#d3fbfb",
     font=("宋体", 12),
     width=12,
     height=2,
     # relief=SUNKEN,
-).place(relx=0.01, rely=0.28, relwidth=0.05, relheight=0.031)
-inp6 = Entry(window)
-inp6.place(relx=0.063, rely=0.28, relwidth=0.46, relheight=0.031)
-
-lb7 = Label(
-    window,
-    text="QMT目录",
-    # bg="#d3fbfb",
-    font=("宋体", 12),
-    width=12,
-    height=2,
-    # relief=SUNKEN,
-).place(relx=0.495, rely=0.28, relwidth=0.07, relheight=0.031)
-inp7 = Entry(window)
-inp7.place(relx=0.56, rely=0.28, relwidth=0.43, relheight=0.031)
+).place(relx=0.58, rely=0.24, relwidth=0.07, relheight=0.031)
+chicang = Entry(window).place(relx=0.636, rely=0.24, relwidth=0.23, relheight=0.031)
 
 # 方法-直接调用 run1()
 btn1 = Button(window, text="方法一", command=run1)
